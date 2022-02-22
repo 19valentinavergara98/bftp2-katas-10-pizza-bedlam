@@ -10,4 +10,5 @@ public class PizzaBedlamTest {
         assertThat(new Pizza("PROSCIUTTO E FUNGHI").getPrice(), equalTo(12.50));
         assertThat(new Pizza("4 STAGIONI").getPrice(), equalTo(12.50));
     }
+
 }
