@@ -4,7 +4,7 @@ package product;
 import java.math.BigDecimal;
 
 public class Extra implements BedlamProducts{
-    private final BigDecimal price;
+    private final Double price;
     private final String name;
 
     public Extra (BigDecimal price, String name) {
@@ -12,7 +12,10 @@ public class Extra implements BedlamProducts{
         this.name = name;
     }
 
-    public BigDecimal getPrice() {
+    public Extra(String gourmet) {
+    }
+
+    public Double getPrice() {
         return switch (name) {
             case "Básicos" -> price + 0.90;
             case "Gourmet" -> price + 1.20;
