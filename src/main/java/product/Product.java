@@ -9,13 +9,13 @@ public class Product {
 
 
 
-    public Product(BigDecimal basePrice, String name){
+    public Product(BigDecimal price, String name){
     this.price = price;
     this.name = name;}
 
-    public BigDecimal getPrice() {return price;}
+        public BigDecimal getPrice() {return price;}
 
-        public void setPrice(BigDecimal price) {this.price = price;}
+        public void setPrice() {this.price = price;}
 
         public String getName() {return name;}
 

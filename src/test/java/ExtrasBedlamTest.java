@@ -1,9 +1,10 @@
 import org.junit.jupiter.api.Test;
+import product.Extra;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class ExtraBedlamTest {
+public class ExtrasBedlamTest {
     @Test
     void extraCostDependsName() {
         assertThat(new Extra("Ingredientes Básicos").getPrice(), equalTo(0.90));
