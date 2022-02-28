@@ -15,6 +15,6 @@ public class TicketGenerator {
     public Double getTotalPrice() {
         return products.stream()
                 .map(Product::getPrice)
-                .reduce(0.0, BigDecimal::sum);
+                .reduce(0.0, Double::sum);
     }
 }
